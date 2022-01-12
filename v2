@@ -1,0 +1,18 @@
+import random
+
+number = random.randint(1, 50)
+ 
+guess = int(input("Enter a number between 1 and 50: "))
+
+
+if guess == number:
+    print("Your guess was correct")
+    print("Well done!")
+    print("Play again soon!")    
+
+else:
+    print("Hard luck!")
+    print("Incorrect guess")
+    print("Play again soon!")    
+
+print("Goodbye")
