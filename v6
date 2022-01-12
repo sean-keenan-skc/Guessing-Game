@@ -1,0 +1,17 @@
+import random
+
+number = random.randint(1, 50)
+
+
+correct = False 
+
+while not correct: 
+
+    guess = int(input("Enter a number between 1 and 50: "))
+    if guess == number:
+        print("Correct")
+        correct = True 
+    elif guess < number:
+        print("Too low")
+    else:
+        print("Too high")
